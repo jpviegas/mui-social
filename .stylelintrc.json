@@ -1,9 +1,12 @@
 {
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.fixAll.stylelint": true,
-    "source.organizeImports": true
-  },
-  "editor.formatOnSave": false,
-  "javascript.updateImportsOnFileMove.enabled": "always"
+  "plugins": ["stylelint-order", "stylelint-prettier"],
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-prettier",
+    "stylelint-prettier/recommended"
+  ],
+  "rules": {
+    "prettier/prettier": true,
+    "order/properties-alphabetical-order": true
+  }
 }
